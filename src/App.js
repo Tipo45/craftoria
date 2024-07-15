@@ -8,10 +8,9 @@ import Regform from "./registration/Registration";
 function App() {
   return (
     <BrowserRouter>
-    <Regform />
-    <Logform />
     <Routes>
-      <Route exact={true} element={<Regform />} />
+      <Route path="/" element={<Logform />} />
+      <Route path="/register" element={<Regform />} />
     </Routes>
     </BrowserRouter>
   );
