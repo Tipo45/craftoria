@@ -89,10 +89,12 @@ const Regform = () => {
     };
 
     return (
+        
         <div className="wrapper">
             <form action="#" onSubmit={handleSubmit}>
                 <h1>Registration</h1>
 
+                <div className="names">
                 <div className="input-box">
                 <MdDriveFileRenameOutline className="icon" />
                 <input type="text" placeholder="Firstname" value={firstname} onChange={(e) => setFirstname(e.target.value)} />
@@ -103,6 +105,7 @@ const Regform = () => {
                 <MdDriveFileRenameOutline className="icon" />
                 <input type="text" placeholder="Lastname" value={lastname} onChange={(e) => setLastname(e.target.value)} />
                 {errors.lastname && <span className="error-message">{errors.lastname}</span>}
+                </div>
                 </div>
 
                 <div className="input-box">
