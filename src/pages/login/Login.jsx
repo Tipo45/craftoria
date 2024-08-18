@@ -1,7 +1,8 @@
 import { useState } from "react";
-import React from 'react'
+import React from 'react';
 import { FaUserAlt, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "../login/Login.css";
 
 
 const Logform = () => {
@@ -51,7 +52,8 @@ const Logform = () => {
 
 
     return (
-        <div className="wrapper">
+        <div>
+            <div className="wrapper">
             <form action="#" onSubmit={handleSubmit}>
 
                 <h1>Login</h1>
@@ -72,9 +74,9 @@ const Logform = () => {
                     <Link to="#">Forgot Password</Link>
                 </div>
 
-                <button type="submit" className="btn">Login</button>
+                <Link to="/client/activepage" className="nodeco"><button type="submit" className="btn">Login</button></Link>
                 <div className="register-link">
-                    <p>Don't have an account? <Link to="/register">Register Here</Link></p>
+                    <p>Don't have an account? <Link to="/registration">Register Here</Link></p>
                 </div>
 
                 {/* <div className={popupError}>
@@ -83,6 +85,9 @@ const Logform = () => {
                 </div> */}
             </form>
         </div>
+        </div>
+
+        
     )
 }
 

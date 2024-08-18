@@ -3,6 +3,7 @@ import React from 'react';
 import { FaUserAlt, FaLock } from "react-icons/fa";
 import { MdDriveFileRenameOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
+import "../login/Login.css"
 
 
 
@@ -126,9 +127,9 @@ const Regform = () => {
                     {errors.confirmpassword && <span className="error-message">{errors.confirmpassword}</span>}
                 </div>
 
-                <button type="submit" className="btn">Register</button>
+                <Link to="/client/activepage"><button type="submit" className="btn">Register</button></Link>
                 <div className="register-link">
-                    <p>Already have an account?<Link to="/">Sign In</Link></p>
+                    <p>Already have an account?<Link to="/login"> Sign In</Link></p>
                 </div>
 
 

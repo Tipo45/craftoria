@@ -5,13 +5,13 @@ const Home = ({Toggle}) => {
     return (
         <div className="px-3">
             <Navbar Toggle={Toggle} />
-            <div className="container-fluid">
+            <div className="container-fluid white-space">
                 <div className="row g-3 my-2">
                     <div className="col-md-3 p-1">
                         <div className="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
                                 <h3 className="fs-2">100</h3>
-                                <p className="fs-5">Products</p>
+                                <p className="fs-6">Products</p>
                             </div>
                             <i className="bi bi-cart-plus p-3 fs-1"></i>
                         </div>
@@ -20,16 +20,16 @@ const Home = ({Toggle}) => {
                         <div className="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
                                 <h3 className="fs-2">25</h3>
-                                <p className="fs-5">Categories</p>
+                                <p className="fs-6">Categories</p>
                             </div>
-                            <i className="bi bi-tags p-3 fs-1"></i>
+                            <i className="bi bi-tags p-3 fs-2"></i>
                         </div>
                     </div>
                     <div className="col-md-3  p-1">
                         <div className="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
                                 <h3 className="fs-2">120</h3>
-                                <p className="fs-5">Delivery</p>
+                                <p className="fs-6">Delivery</p>
                             </div>
                             <i className="bi bi-truck p-3 fs-1"></i>
                         </div>
@@ -38,7 +38,7 @@ const Home = ({Toggle}) => {
                         <div className="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
                                 <h3 className="fs-2">170</h3>
-                                <p className="fs-5">Sales</p>
+                                <p className="fs-6">Sales</p>
                             </div>
                             <i className="bi bi-currency-dollar p-3 fs-1"></i>
                         </div>
@@ -78,7 +78,7 @@ const Home = ({Toggle}) => {
                         </tr>
                     </tbody>
                 </table>
-            </div>
+        </div>
 
     )
 }
