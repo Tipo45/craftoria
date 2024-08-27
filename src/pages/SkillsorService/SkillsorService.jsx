@@ -8,101 +8,66 @@ const SkillsorService = () => {
         <>
             <div>
                 <Navbar />
+                <div>
+                    <input type="search" placeholder="Search..." />
+                </div>
                 <div className="skills">
-                    <section classNameName="steps-section-container" id="steps-section-container">
-                        <div className="new-arrivals-text">
-                            <h2>Available Items</h2>
-                        </div>
+                    <section classNameName="section-container" id="section-container">
 
-                        <div className="steps-section-container-content">
-                            <div className="rows">
-                                <img src="../" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Tailoring Services</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                        <div className="section-container-content">
+
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/1465634394/photo/african-dressmaking-entrepreneur.jpg?s=612x612&w=is&k=20&c=l6oByiOnw8U_T5Y6lcoWe7Zb-a7wWr_p_2IzSkWmUzk=" alt="Tailoring Services" />
+                                
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Red Hoodie.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Auto Repair</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/1892182257/photo/male-mechanic-working-on-car-engine-in-auto-repair-shop.jpg?s=2048x2048&w=is&k=20&c=fHi1Fheh3-ByUS6MdlQXJgrN3InZq28Efhp_eeLp2Ks=" alt="Auto Repair" />
+                               
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Male Black Jean with Light Patches.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Electrical services</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/1165561132/photo/electrician-working-at-electric-panel.jpg?s=2048x2048&w=is&k=20&c=c4kZZnk21SM9KeKxW44ltx9y2NZPS6OlMXz_vLdo4YU=" alt="Electrical Services" />
+                               
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Female Sky-Blue Jean.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Plumbing Services</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/1440019701/photo/close-up-of-plumber-repairing-sink-with-tool-in-bathroom.jpg?s=2048x2048&w=is&k=20&c=5m-JfCrZBaSidsv4kUo5my6keChi4e5wIsaF832h-88=" alt="Plumbing Services" />
+                            
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Female Blue Jean.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Catering Services</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/637765812/photo/cuisine-culinary-buffet-dinner-catering-dining-food-celebration.jpg?s=2048x2048&w=is&k=20&c=yhcsWsT9BEO09L9Zhtbjo8BegTaQh69i-nRBeTH9SfY=" alt="Catering Services" />
+                                
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Male Blue Shirt.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Building/Construction</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/143918313/photo/excavator-at-a-construction-site-against-the-setting-sun.jpg?s=612x612&w=is&k=20&c=JHirA3ujFnq7GsWBALmxyzPDpNUX9OIfxDzGwpE6LX8=" alt="Building/Construction" />
+                                
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Blue Canvas with Green Stripes.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Arts</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/1125625188/photo/girl-painting-on-canvas.jpg?s=612x612&w=is&k=20&c=5ZdMo5yfsCh-gkmOpD4Jo6UkYX0-ociq0uLEZz_VA5Y=" alt="Arts" />
+                                
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Unisex Dark-Blue Jean.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Electrical/Electronics</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/1587634776/photo/construction-team-tablet-and-inspection-planning-from-engineer-staff-at-job-site.jpg?s=612x612&w=is&k=20&c=WPTHYjqo8_PbjnpxbUn43pzx5ve7rsEBarCXVaGDsho=" alt="Electrical/Electronics" />
+                               
+                                
                             </div>
 
-                            <div className="rows">
-                                <img src="Images/Unisex Dark-Blue Jean.jpg" alt="" />
-                                <div className="main-rows">
-                                    <div className="rows-text">
-                                        <h6>Other Categories</h6>
-                                    </div>
-                                </div>
-                                <h3 className="view-button">View</h3>
+                            <div className="column">
+                                <img src="https://media.istockphoto.com/id/1465634394/photo/african-dressmaking-entrepreneur.jpg?s=612x612&w=is&k=20&c=l6oByiOnw8U_T5Y6lcoWe7Zb-a7wWr_p_2IzSkWmUzk=" alt="Other Categories" />
+                                
+                                
                             </div>
 
                         </div>

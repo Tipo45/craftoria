@@ -7,9 +7,10 @@ import Logform from "./pages/login/Login";
 import NoPage from "./Nopage";
 import Client from "./pages/Cuserside/Client";
 import Regform from "./pages/registration/Registration";
-import YourOrders from "./components/ClientUserProfile/Userorders";
 import Homepage from "./pages/HomePage/Homepage";
 import SkillsorService from "./pages/SkillsorService/SkillsorService";
+import Artisan from "./pages/Auserside/Artisan";
+import Registrationartisan from "./pages/registration/Registrationartisan";
 
 
 function App() {
@@ -17,12 +18,14 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/registration" element={<Regform />} />
+      <Route path="/clientregistration" element={<Regform />} />
+      <Route path="/artisanregistration" element={<Registrationartisan />} />
       <Route path="/login" element={<Logform />} />
       <Route path="/SkillandServices" element={<SkillsorService />} />
       <Route path="/admin/:activepage" element={<Admin />} />
       <Route path="/client/:activepage" element={<Client />} /> 
-      <Route path="/clientorders" element={<YourOrders />} />
+      <Route path="/artisan/:activepage" element={<Artisan />} />
+
 
       <Route path="*" element={<NoPage />} />
     </Routes>
