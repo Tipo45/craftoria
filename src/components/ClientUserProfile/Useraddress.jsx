@@ -60,7 +60,7 @@ const Useraddress = () => {
 
                                 <div className='form-group'>
                                     <label htmlFor='addressline1'>New Address</label>
-                                    <input type="text" />
+                                    <input type="text" required />
                                 </div>
                             </div>
 

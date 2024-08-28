@@ -41,6 +41,11 @@ header {
 
 .icon {
   display: block;
+  cursor: pointer;
+}
+
+.icon svg {
+  font-size: 1.4rem;
 }
 
 .container .nav-link {
@@ -52,24 +57,23 @@ header {
   width: 60%;
   height: 100%;
   top: 95px;
-  left: -500px;
-  right: 0;
+  right: -200px;
+  left: 400px;
   z-index: 10;
   text-align: center;
-  transition: all 0.5s ease-in-out;
-}
-
-.social-links {
-  margin-top: 50%;
-
-}
-
-.social-links a {
-  padding: 5%;
+  transition: all 0.5s ease-in;
 }
 
 .nav-link.active {
   left: 40%;
+}
+
+.social-links {
+  margin-top: 50%;
+}
+
+.social-links a {
+  padding: 5%;
 }
 
 .big_footer {
@@ -91,6 +95,10 @@ header {
 /* media queries */
 
 @media (min-width: 475px) {
+  .main-logo {
+    font-size: 1rem;
+  }
+
   .social-links {
     display: none;
   }
@@ -105,6 +113,19 @@ header {
 }
 
 @media (min-width: 768px) {
+  .main-logo {
+    font: 2.6rem;
+  }
+
+  .icon svg {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .container nav .logo h2 {
     font-size: 1.5rem;
   }
@@ -115,12 +136,12 @@ header {
 
   .container .nav-link {
     top: 100px;
-    left: -600px;
     width: 300px;
+    left: 800px;
   }
 
   .nav-link.active {
-    left: 62%;
+    left: 61%;
   }
 
   .container .nav-link li {
@@ -132,7 +153,7 @@ header {
   }
 
   .social-links a svg {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
 
   .small_footer {
@@ -148,10 +169,13 @@ header {
   }
 
   .container {
-    max-width: 1440px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+
+  .main-logo {
+    font-size: 2rem !important;
   }
 
   .container nav {
@@ -171,11 +195,11 @@ header {
   .container .nav-link {
     flex-direction: row;
     justify-content: flex-start;
-    background: #aac8fc;
+    background: transparent;
     width: 60%;
     top: 13px;
     height: auto;
-    left: 500px;
+    left: 450px;
     right: 0;
   }
 
@@ -299,5 +323,18 @@ header {
 
   .small_footer {
     display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container .nav-link {
+    flex-direction: row;
+    justify-content: flex-start;
+    background: transparent;
+    width: 60%;
+    top: 13px;
+    height: auto;
+    left: 850px;
+    right: 0;
   }
 }

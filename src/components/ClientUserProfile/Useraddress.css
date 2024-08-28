@@ -1,5 +1,5 @@
 
-  .useraddress, .artisanadress {
+  .useraddress {
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -7,6 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.mainhead1 {
+    text-align: center;
+    padding: 8px;
+    font-size: 1.5rem;
 }
 
 .addressin {
@@ -31,7 +37,7 @@
     gap:5px;
 }
 
-.addressin .address .delbtn, .artisanadress .address .delbtn {
+.addressin .address .delbtn {
     background: #5995fd;
     border: none;
     border-radius: 50%;
@@ -48,7 +54,7 @@
     margin: 5px;
 }
 
-.useraddress .addnewbtn, .artisanadress .addnewbtn {
+.useraddress .addnewbtn {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -62,7 +68,7 @@
     font-size: 2rem;
 }
 
-.useraddress .addnew, .artisanadress .addnew {
+.useraddress .addnew {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -70,21 +76,21 @@
     align-items: center;
 }
 
-.useraddress .addnew h1, .artisanadress .addnew h1 {
+.useraddress .addnew h1 {
     text-align: center;
 }
 
-.useraddress .addnew button, .artisanadress .addnew button {
+.useraddress .addnew button {
     width: 200px;
     padding: 5px 20px;
     margin: 0px;
     font-size: 1.1rem;
-    background: #5995fd;
+    background: #5995fd !important;
     border-radius: 5px;
     color: #f4f4f4;
 }
 
-.useraddress .form, .artisanadress .form {
+.useraddress .form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -93,27 +99,27 @@
     padding: 10px 20px;
 }
 
-.useraddress .form .form-group, .artisanadress .form .form-group {
+.useraddress .form .form-group {
     display: flex;
     flex-direction: column;
     width: 45%;
     margin: 10px;
 }
 
-.useraddress .form .form-group label, .artisanadress .form .form-group label {
+.useraddress .form .form-group label {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 5px;
 }
 
-.useraddress .form .form-group input, .artisanadress .form .form-group input {
+.useraddress .form .form-group input {
     padding: 10px 20px;
     border: 1px solid rgb(207, 207, 207);
     border-radius: 5px;
     outline: none;
 }
 
-.useraddress .form button, .artisanadress .form button {
+.useraddress .form button {
     padding: 5px 20px;
     margin: 0px;
     font-size: 16px;
@@ -123,7 +129,7 @@
 
 @media (max-width: 1000px) {
 
-    .useraddress .addnewbtn, .artisanadress .addnewbtn {
+    .useraddress .addnewbtn {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -176,14 +182,14 @@
 
 @media (max-width: 900px) {
 
-    .useraddress .form, .artisanadress .form {
+    .useraddress .form {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 10px 20px;
     }
     
-    .useraddress .form .form-group, .artisanadress .form .form-group{
+    .useraddress .form .form-group {
         display: flex;
         flex-direction: column;
         width: 97%;

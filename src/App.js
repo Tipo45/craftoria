@@ -21,7 +21,7 @@ function App() {
       <Route path="/clientregistration" element={<Regform />} />
       <Route path="/artisanregistration" element={<Registrationartisan />} />
       <Route path="/login" element={<Logform />} />
-      <Route path="/SkillandServices" element={<SkillsorService />} />
+      <Route path="/productandServices/:activepage" element={<SkillsorService />} />
       <Route path="/admin/:activepage" element={<Admin />} />
       <Route path="/client/:activepage" element={<Client />} /> 
       <Route path="/artisan/:activepage" element={<Artisan />} />

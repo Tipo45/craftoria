@@ -2,21 +2,36 @@ import React from "react";
 import "../ClientUserProfile/Usersidebar.css";
 import { Link } from "react-router-dom";
 import { GrUserSettings } from "react-icons/gr";
-import { IoBagOutline, IoEyeOutline,IoPower } from "react-icons/io5";
+import { IoBagOutline, IoEyeOutline, IoPower } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
+import { FaRegUser } from "react-icons/fa";
 
 const UserSidebar = ({ activepage }) => {
   return (
     <div className="usersidebar">
       {activepage === "accountsettings" ? (
         <div className="s2">
-          <GrUserSettings className="text-secondary-color" />
+          <FaRegUser />
+          <span>Account Information</span>
+        </div>
+      ) : (
+        <Link to="/client/accountsettings" className="nodeco">
+          <div className="s1">
+            <FaRegUser className="text-dark" />
+            <span className="text-dark">Account Information</span>
+          </div>
+        </Link>
+      )}
+
+      {activepage === "accountsettings" ? (
+        <div className="s2">
+          <GrUserSettings />
           <span>Account Settings</span>
         </div>
       ) : (
         <Link to="/client/accountsettings" className="nodeco">
           <div className="s1">
-            <GrUserSettings className="text-danger" />
+            <GrUserSettings className="text-info" />
             <span className="text-dark">Account Settings</span>
           </div>
         </Link>
@@ -30,7 +45,7 @@ const UserSidebar = ({ activepage }) => {
       ) : (
         <Link to="/client/changepassword" className="nodeco">
           <div className="s1">
-            <IoEyeOutline className="text-info" />
+            <IoEyeOutline className="text-secondary" />
             <span className="text-dark">Change Password</span>
           </div>
         </Link>

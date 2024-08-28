@@ -1,16 +1,16 @@
-.accountsettings{
+.artisanportfolio{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.accountsettings h1{
+.artisanportfolio h1{
     padding: 10px 20px;
 }
 
 
-.accountsettings .form{
+.artisanportfolio .form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,24 +19,29 @@
     padding: 10px 20px;
 }
 
-.accountsettings .form .form-group{
+.artisanportfolio .form .form-group{
     display: flex;
     flex-direction: column;
     width: 45%;
     margin: 10px;
 }
 
-.accountsettings .form .form-group label{
+.artisanportfolio .form .form-group label{
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 5px;
 }
 
-.accountsettings .form .form-group input{
+.artisanportfolio .form .form-group input{
     padding: 10px 20px;
     border: 1px solid rgb(207, 207, 207);
     border-radius: 5px;
     outline: none;
+}
+
+.description {
+    height: 250px;
+    max-height: 100%;
 }
 
 .btn {
@@ -74,7 +79,7 @@
 
   @media (max-width: 550px){
 
-    .accountsettings .form{
+    .artisanportfolio .form{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -83,18 +88,18 @@
         padding: 10px 20px;
     }
 
-    .accountsettings .form .form-group{
+    .artisanportfolio .form .form-group{
         display: flex;
         flex-direction: column;
         width: 97%;
         margin: 10px;
     }
 
-    .accountsettings h1{
+    .artisanportfolio h1{
         font-size: 20px;
     }
 
-    .accountsettings .form .form-group label{
+    .artisanportfolio .form .form-group label{
         font-size: 16px;
         font-weight: 300;
         margin-bottom: 5px;

@@ -8,7 +8,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeIcon from '@mui/icons-material/Home';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 
 const Footer = () => {
 
@@ -109,8 +109,8 @@ const Footer = () => {
                             }}
                         >
                             <Link to="/"><BottomNavigationAction label="Home" icon={<HomeIcon />} /></Link>
-                            <Link to="/SkillandServices"><BottomNavigationAction label="Menu" icon={<FormatListBulletedIcon />} /></Link>
-                            <Link to="/"><BottomNavigationAction label="Search" icon={<SearchIcon />} /></Link>
+                            <Link to="/productandServices/activepage"><BottomNavigationAction label="Menu" icon={<FormatListBulletedIcon />} /></Link>
+                            <Link to="/cart"><BottomNavigationAction label="Cart" icon={<ShoppingCartCheckoutIcon /> } /></Link>
                             <Link to="/login"><BottomNavigationAction label="Account" icon={<AccountCircleIcon />} /></Link>
                         </BottomNavigation>
                     </div>
