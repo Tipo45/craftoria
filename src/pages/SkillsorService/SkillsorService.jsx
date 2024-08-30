@@ -34,7 +34,7 @@ const SkillsorService = () => {
             {activepage === "electricians" && <Electricians />}
             {activepage === "plumbers" && <Plumbers />}
             {activepage === "caterers" && <Caterers />}
-            {activepage === "builders&constructors" && <Buildersandconstructors />}
+            {activepage === "buildersandconstructors" && <Buildersandconstructors />}
             {activepage === "arts" && <Art />}
             {activepage === "otherservices" && <Otherservices />}
           </div>

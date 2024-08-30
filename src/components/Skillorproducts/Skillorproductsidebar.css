@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 
 .skillandproductsidebar {
   width: 100%;
@@ -6,56 +9,82 @@
   flex-direction: column;
 }
 
-.skillandproductsidebar .column1 , .skillandproductsidebar .column2{
+.skillandproductsidebar .column1,
+.skillandproductsidebar .column2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
-.skillandproductsidebar .column1 img, .skillandproductsidebar .column2 img {
-  width: 250px;
-  height: 250px;
+.skillandproductsidebar .column1 {
+  margin-bottom: 20px;
 }
 
-@media (max-width: 800px) {
-
-  .skillandproductsidebar .column1 img, .skillandproductsidebar .column2 img {
-    width: 190px;
-    height: 150px;
-  }
- 
+.skillandproductsidebar .column1 h1,
+.skillandproductsidebar .column2 h1 {
+  font-size: 0.7rem;
+  color: #000;
 }
 
-@media (max-width: 500px) {
-  .skillandproductsidebar {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      padding: 10px;
+@media (min-width: 375px) {
+  .skillandproductsidebar .column1 h1,
+  .skillandproductsidebar .column2 h1 {
+    font-size: 0.85rem;
+    color: #000;
   }
-  .skillandproductsidebar .column1 , .skillandproductsidebar .column2{
-      display: flex;
-      align-items: center;
-      gap: 2px;
-      padding: 3px;
+}
+
+@media (min-width: 425px) {
+  .skillandproductsidebar .column1 h1,
+  .skillandproductsidebar .column2 h1 {
+    font-size: 1rem;
   }
-  .skillandproductsidebar .column1{
-      border-radius: 25px;
-      cursor: pointer;
-      padding: 5px 20px;
+}
+
+@media (min-width: 475px) {
+  .skillandproductsidebar .column1 h1,
+  .skillandproductsidebar .column2 h1 {
+    font-size: 0.8rem;
   }
-  .skillandproductsidebar .column2{
-      border-radius: 25px;
-      cursor: pointer;
-      padding: 5px 20px;
+}
+
+@media (min-width: 768px) {
+  .skillandproductsidebar .column1 {
+    margin-bottom: 40px;
   }
 
-  .skillandproductsidebar .column1 img, .skillandproductsidebar .column2 img {
-    width: 70px;
-    height: 70px;
+  .skillandproductsidebar .column1 h1,
+  .skillandproductsidebar .column2 h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .skillandproductsidebar .column1 h1,
+  .skillandproductsidebar .column2 h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skillandproductsidebar .column1 {
+    margin-bottom: 50px;
   }
 
+  .skillandproductsidebar .column1 h1,
+  .skillandproductsidebar .column2 h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .skillandproductsidebar .column1 {
+    margin-bottom: 60px;
+  }
+
+  .skillandproductsidebar .column1 h1,
+  .skillandproductsidebar .column2 h1 {
+    font-size: 3rem;
+  }
 }

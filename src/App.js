@@ -12,6 +12,7 @@ import SkillsorService from "./pages/SkillsorService/SkillsorService";
 import Artisan from "./pages/Auserside/Artisan";
 import Registrationartisan from "./pages/registration/Registrationartisan";
 import About from "./pages/About/About";
+import Cart from "./pages/Cart/Cart";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path="/clientregistration" element={<Regform />} />
       <Route path="/artisanregistration" element={<Registrationartisan />} />
       <Route path="/login" element={<Logform />} />
+      <Route path="/cart" element={<Cart />} />
       <Route path="/admin/:activepage" element={<Admin />} />
       <Route path="/client/:activepage" element={<Client />} /> 
       <Route path="/artisan/:activepage" element={<Artisan />} />
