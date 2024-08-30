@@ -29,12 +29,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link className="nodeco" to="/">
+                <Link className="nodeco" to="/about">
                   About
                 </Link>
               </li>
               <li>
-                <Link className="nodeco" to="/productandServices">
+                <Link className="nodeco" to="/productsandservices/activepage">
                   Products/Services
                 </Link>
               </li>

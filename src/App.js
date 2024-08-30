@@ -11,6 +11,7 @@ import Homepage from "./pages/HomePage/Homepage";
 import SkillsorService from "./pages/SkillsorService/SkillsorService";
 import Artisan from "./pages/Auserside/Artisan";
 import Registrationartisan from "./pages/registration/Registrationartisan";
+import About from "./pages/About/About";
 
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Homepage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/productsandservices/:activepage" element={<SkillsorService />} />
       <Route path="/clientregistration" element={<Regform />} />
       <Route path="/artisanregistration" element={<Registrationartisan />} />
       <Route path="/login" element={<Logform />} />
-      <Route path="/productandServices/:activepage" element={<SkillsorService />} />
       <Route path="/admin/:activepage" element={<Admin />} />
       <Route path="/client/:activepage" element={<Client />} /> 
       <Route path="/artisan/:activepage" element={<Artisan />} />

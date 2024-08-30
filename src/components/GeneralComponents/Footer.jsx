@@ -109,7 +109,7 @@ const Footer = () => {
                             }}
                         >
                             <Link to="/"><BottomNavigationAction label="Home" icon={<HomeIcon />} /></Link>
-                            <Link to="/productandServices/activepage"><BottomNavigationAction label="Menu" icon={<FormatListBulletedIcon />} /></Link>
+                            <Link to="/productsandservices/activepage"><BottomNavigationAction label="Menu" icon={<FormatListBulletedIcon />} /></Link>
                             <Link to="/cart"><BottomNavigationAction label="Cart" icon={<ShoppingCartCheckoutIcon /> } /></Link>
                             <Link to="/login"><BottomNavigationAction label="Account" icon={<AccountCircleIcon />} /></Link>
                         </BottomNavigation>

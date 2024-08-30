@@ -23,16 +23,22 @@ const SkillsorService = () => {
         <div className="search-bar">
           <input type="search" placeholder="Search..." />
         </div>
-        <Skillorproductsidebar />
-        <div className="right-side">
-          {activepage === "tailors" && <Tailors /> }
-          {activepage === "autotechnicians" && <Autotechnicians /> }
-          {activepage === "electricians" && <Electricians /> }
-          {activepage === "plumbers" && <Plumbers /> }
-          {activepage === "caterers" && <Caterers /> }
-          {activepage === "builders&constructors" && <Buildersandconstructors /> }
-          {activepage === "arts" && <Art /> }
-          {activepage === "otherservices" && <Otherservices /> }
+        <div className="full-content">
+          <div className="full-contentin">
+          <div className="left-side">
+            <Skillorproductsidebar />
+          </div>
+          <div className="right-side">
+            {activepage === "tailors" && <Tailors />}
+            {activepage === "autotechnicians" && <Autotechnicians />}
+            {activepage === "electricians" && <Electricians />}
+            {activepage === "plumbers" && <Plumbers />}
+            {activepage === "caterers" && <Caterers />}
+            {activepage === "builders&constructors" && <Buildersandconstructors />}
+            {activepage === "arts" && <Art />}
+            {activepage === "otherservices" && <Otherservices />}
+          </div>
+          </div>
         </div>
         <Footer />
       </div>
